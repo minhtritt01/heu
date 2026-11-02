@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "HÊU Flow Helper",
+  "version": "1.0.0",
+  "description": "Cho app HÊU tạo video/ảnh bằng Google Flow ngay trong Chrome của bạn: tự dán prompt, bấm Tạo, tải kết quả về HÊU.",
+  "permissions": ["debugger", "tabs", "scripting", "storage", "alarms"],
+  "host_permissions": [
+    "https://flow.google.com/*",
+    "https://labs.google/*",
+    "https://flow-content.google/*",
+    "https://*.googleusercontent.com/*",
+    "http://127.0.0.1/*"
+  ],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html", "default_title": "HÊU Flow Helper", "default_icon": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" } },
+  "icons": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" }
+}

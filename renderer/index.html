@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' file: data:; media-src 'self' file:; style-src 'self' 'unsafe-inline'; script-src 'self'">
+  <title>HÊU</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside>
+    <div class="logo"><div class="mark">HÊU</div><div><b>HÊU</b><small>Studio video AI · Veo 3.1 · Muse · Claude</small></div></div>
+    <div class="nav-h">Vận hành</div>
+    <div class="nav" data-page="quick"><span class="ic">✦</span>Tạo nhanh</div>
+    <div class="nav" data-page="projects"><span class="ic">▣</span>Dự án (kịch bản)</div>
+    <div class="nav" data-page="competitor"><span class="ic">◎</span>Phân tích đối thủ</div>
+    <div class="nav" data-page="queue"><span class="ic">≡</span>Tiến trình render</div>
+    <div class="nav" data-page="library"><span class="ic">▶</span>Kho video</div>
+    <div class="nav-h">Khác</div>
+    <div class="nav" data-page="pricing"><span class="ic">◆</span>Bảng giá</div>
+    <div class="nav" data-page="settings"><span class="ic">⚙</span>Cài đặt</div>
+    <div class="nav" data-page="guide"><span class="ic">?</span>Hướng dẫn sử dụng</div>
+    <div class="side-foot" id="sideStatus">Đang kiểm tra…</div>
+  </aside>
+  <main id="main"></main>
+  <div id="toasts"></div>
+  <div id="busy"><div class="box"><div class="spin"></div><b id="busyTitle">Claude đang làm việc…</b><p class="muted small" id="busyStep"></p><button class="btn sm" id="busyCancel">Dừng Claude</button></div></div>
+  <script src="app.js"></script>
+</body>
+</html>

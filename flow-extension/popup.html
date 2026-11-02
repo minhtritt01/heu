@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><title>HÊU Flow Helper</title>
+<style>
+body{width:330px;margin:0;font:13px "Segoe UI",system-ui,sans-serif;background:#14171a;color:#e7ece9}
+.wrap{padding:14px;display:flex;flex-direction:column;gap:10px}
+h1{font-size:15px;margin:0;display:flex;align-items:center;gap:8px}h1 img{width:22px;height:22px;border-radius:6px}
+.row{display:flex;align-items:center;gap:8px}
+.dot{width:9px;height:9px;border-radius:50%;background:#555;flex:none}.ok{background:#5fdc8a}.warn{background:#f5b44a}.err{background:#ff6b6b}
+label{display:flex;flex-direction:column;gap:4px;color:#8e9a96;font-size:12px}
+input{background:#0f1214;border:1px solid #2c343a;color:#e7ece9;border-radius:8px;padding:7px 9px;font:inherit}
+button{background:#20262b;border:1px solid #2c343a;color:#e7ece9;border-radius:8px;padding:7px 10px;cursor:pointer;font:inherit}
+button.pri{background:#b5f45c;color:#13200a;border-color:#b5f45c;font-weight:700}
+.muted{color:#8e9a96;font-size:12px}pre{white-space:pre-wrap;background:#0f1214;border-radius:8px;padding:8px;font-size:11px;max-height:160px;overflow:auto;margin:0}
+</style></head>
+<body><div class="wrap">
+<h1><img src="icon48.png" alt="">HÊU Flow Helper</h1>
+<div id="st" class="col"></div>
+<label>Mã ghép nối (lấy trong HÊU → Cài đặt → API Veo 3)<input id="key" placeholder="VD: 4F2A-9C1D"></label>
+<label>Địa chỉ HÊU<input id="host" placeholder="http://127.0.0.1:47321"></label>
+<div class="row"><button class="pri" id="save">Lưu & kết nối</button><button id="open">Mở Google Flow</button></div>
+<div class="row"><button id="diag">Dò giao diện Flow</button><span class="muted">kiểm tra tiện ích có nhìn thấy ô prompt, nút Tạo</span></div>
+<pre id="out" hidden></pre>
+<div class="muted">Giữ một tab <b>dự án</b> Google Flow mở. Khi HÊU giao việc, tiện ích tự dán prompt, bấm Tạo và gửi file về. Chrome sẽ hiện dòng “đang gỡ lỗi trình duyệt” trong lúc bấm — đó là cách gửi cú bấm thật, bình thường.</div>
+</div><script src="popup.js"></script></body></html>
